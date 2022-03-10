@@ -34,7 +34,7 @@ db.bd.find({publisher:"Zacks",stock:"A"}).count()
 Запросы на изменение:
 1) Переименуем все новости где издатель Zucks на GuruFocus:
 ```javascript
-db.bd.updateMany({publisher:"Zacks",},{$set: {publisher: "GuruInvest"}})
+db.bd.updateMany({publisher:"Zacks",},{$set: {publisher: "GuruFocus"}})
 ```
 После чего проверим количество записей с издателем Zacks:
 
