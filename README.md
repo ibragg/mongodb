@@ -1,4 +1,10 @@
 # mongodb
-Разворачиваем MongoDB, заполняем данными и делаем запросы
+
+##Устанавливаем MongoDB Compass с официального сайта. Далее для удобства я создал бесплатный кластер также на https://www.mongodb.com/basics/clusters, к которому подключаемся через ранее устанвленный клиент. Создаем новую базу данных. Я выбрал Daily Financial News for 6000+ Stocks из [source](https://www.kaggle.com/miguelaenlle/massive-stock-news-analysis-db-for-nlpbacktests)
 
 ![](upload%20data.png)
+
+
+После того как данные загружены напишем несколько запросов на выборку и изменение данных.
+
+##Запросы
