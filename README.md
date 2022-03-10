@@ -48,4 +48,22 @@ db.bd.updateMany({publisher:"GuruFocus",stock:"A"},{$set: {stock:"B"}})
 
 ![result5](query5.png)
 
-3) Поменяем 
+
+## Индексы
+
+Сравним производительность до и после индексов.
+
+До(когда индексы только по id, стандартные):
+
+![before](before$20indexes.png)
+
+Создаем индексы по столбцу дат:
+```javascript
+db.bd.createIndex({date:1})
+```
+![created](added.png)
+
+Сравниваем производительность после создания индексов:
+![after](after%20indexes.png)
+
+
