@@ -18,3 +18,14 @@ db.bd.find({date:"2020-06-01 00:00:00", publisher:"GuruFocus",stock:"A"})
 ```
 ![result1](query1.png)
 
+2) Сколько всего новостей было опубликовано 1-го июня?
+```javascript
+db.bd.find({date:"2020-06-01 00:00:00"}).count()
+```
+![result2](query2.png)
+
+3) Сколько всего было новостей про акции класса А за период с 2009 по 2020 год у издания Zacks?
+```javascript
+db.bd.find({publisher:"Zacks",stock:"A"}).count()
+```
+![result3](query3.png)
