@@ -29,3 +29,23 @@ db.bd.find({date:"2020-06-01 00:00:00"}).count()
 db.bd.find({publisher:"Zacks",stock:"A"}).count()
 ```
 ![result3](query3.png)
+
+
+Запросы на изменение:
+1) Переименуем все новости где издатель Zucks на GuruFocus:
+```javascript
+db.bd.updateMany({publisher:"Zacks",},{$set: {publisher: "GuruInvest"}})
+```
+После чего проверим количество записей с издателем Zacks:
+
+![result4](query4.png)
+
+2) Поменяем все класс акций А у издателя GuruFocus на класс B
+```javascript
+db.bd.updateMany({publisher:"GuruFocus",stock:"A"},{$set: {stock:"B"}})
+```
+После чего делаем проверку
+
+![result5](query5.png)
+
+3) Поменяем 
