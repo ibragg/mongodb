@@ -55,7 +55,7 @@ db.bd.updateMany({publisher:"GuruFocus",stock:"A"},{$set: {stock:"B"}})
 
 До(когда индексы только по id, стандартные):
 
-![before](before$20indexes.png)
+![before](before%20indexes.png)
 
 Создаем индексы по столбцу дат:
 ```javascript
