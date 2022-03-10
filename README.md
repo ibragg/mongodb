@@ -11,3 +11,10 @@
 
 ## Запросы
 
+Запросы на выборку:
+1) Какие новости публиковало издание GuruFocus 1-го июня по акциям класса А?
+```javascript
+db.bd.find({date:"2020-06-01 00:00:00", publisher:"GuruFocus",stock:"A"})
+```
+![result1](query1.png)
+
